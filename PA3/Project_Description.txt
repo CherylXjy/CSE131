@@ -1,0 +1,30 @@
+Name: Di Qian, Jiayi Xu
+Pid: A91108215, A91084563
+
+First, we create a symbol table for storing scope,
+each scope will store all these symbols and 
+declarations within that scope. 
+
+Second step is the most difficult one,
+we added check method to every single class which
+requires a check method.
+
+We started with AST_STMT's program check file as
+the guide instructed and followed the
+polyphmorism idea to implement our check method.
+
+We ended up doing the check methods in AST_EXPR last,
+which is relatively easier due to the fact that
+we have gain the sense of familiarity of writing
+all these check methods.
+
+We have encountered a lot of difficulties. The biggest
+problem was we ignored to check double declaration with
+previous scopes, and we only did check in our current 
+scope which resulted in a 10 hour debug time.
+
+Also, we struggle on the implementatin of the stack, and
+at last, we have abandoned the idea of stack, and using a 
+similar stack approach, but a more intuitive one to 
+make the implementation more clear and straight forward.
+
