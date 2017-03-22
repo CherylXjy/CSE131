@@ -1,0 +1,114 @@
+
+*** Error line 4.
+    abc.def;
+        ^^^
+*** VarExpr swizzle 'def' is not proper subset of [xyzw]
+
+
+*** Error line 5.
+    abc.de;
+        ^^
+*** VarExpr swizzle 'de' is not proper subset of [xyzw]
+
+
+*** Error line 6.
+    abc.xyz;
+        ^^^
+*** VarExpr swizzle 'xyz' exceeds its vector component
+
+
+*** Error line 8.
+    abc.zz;
+        ^^
+*** VarExpr swizzle 'zz' exceeds its vector component
+
+
+*** Error line 9.
+    abc.xz;
+        ^^
+*** VarExpr swizzle 'xz' exceeds its vector component
+
+
+*** Error line 10.
+    abc.xxyyxyxy;
+        ^^^^^^^^
+*** VarExpr swizzle 'xxyyxyxy' generates a vector longer than vec4
+
+
+*** Error line 11.
+    d.x;    
+      ^
+*** VarExpr non-vector type can't have swizzle 'x'
+
+
+*** Error line 13.
+    vec3 abc;
+            ^
+*** Declaration of 'abc' here conflicts with declaration on line 3
+
+
+*** Error line 16.
+    abc.ww;
+        ^^
+*** VarExpr swizzle 'ww' exceeds its vector component
+
+
+*** Error line 18.
+    if (d) {
+        ^
+*** Test expression must have boolean type
+
+
+*** Error line 19.
+        y = 0;
+          ^
+*** No declaration found for variable 'y'
+
+
+*** Error line 23.
+        break;
+             ^
+*** break is only allowed inside a loop
+
+
+*** Error line 26.
+        break;
+             ^
+*** break is only allowed inside a loop
+
+
+*** Error line 28.
+    continue;
+            ^
+*** continue is only allowed inside a loop
+
+
+*** Error line 40.
+    continue;
+            ^
+*** continue is only allowed inside a loop
+
+
+*** Error line 61.
+    for (x = 0; y ; x++ ) {
+                ^
+*** Test expression must have boolean type
+
+
+*** Error line 76.
+   switch( x + 1.0 ) {
+                   ^
+*** Incompatible operands: int + float
+
+
+*** Error line 77.
+     case 0: continue;
+                     ^
+*** continue is only allowed inside a loop
+
+
+*** Error line 83.
+   switch( x + 1.0 ) {
+                   ^
+*** Incompatible operands: int + float
+

@@ -1,0 +1,6 @@
+
+*** Error line 1.
+void foo (ivec2 a, ivec3 b,ivec4 c) {
+          ^^^^^
+*** syntax error
+

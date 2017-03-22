@@ -1,0 +1,6 @@
+
+*** Error line 3.
+	if(true)int i = 2;
+                         ^
+*** Declaration of 'i' here conflicts with declaration on line 2
+

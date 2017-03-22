@@ -1,0 +1,6 @@
+
+*** Error line 25.
+		z = 0.5;
+                  ^
+*** No declaration found for variable 'z'
+

@@ -1,0 +1,6 @@
+
+*** Error line 3.
+    f<=f;
+        ^
+*** Incompatible operands: mat3 <= mat3
+
